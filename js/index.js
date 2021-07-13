@@ -124,7 +124,7 @@
 		const contract = new web3.eth.Contract(basicABI, token);
 		const symbol = await contract.methods.symbol().call();
 
-		$("#address-form").html(`<br/><h5>Contributed: ${contribs} BNB, Tokens: ${rate * contribs / 10 ** decimals} ${symbol}</h5>`);
+		$("#address-form").html(`<br/><h5>Contributed: ${contribs} KCC, Tokens: ${rate * contribs / 10 ** decimals} ${symbol}</h5>`);
 	}
 	$("#loadAddressBtn").click(checkWalletPresale);
 
